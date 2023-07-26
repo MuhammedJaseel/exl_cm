@@ -1,4 +1,5 @@
 import React from "react";
+const testPdf = require("../assets/sample.pdf");
 
 export default function HomeOverview({ filter, setState }: any) {
   return (
@@ -45,7 +46,12 @@ export default function HomeOverview({ filter, setState }: any) {
             <div className="hoDfBaA_">Philander Energy Loss Run.pell</div>
           </div>
           <div className="hoDe" /> {/* Line */}
-          <div className="hoDfBb"></div>
+          <div className="hoDfBb">
+            <iframe
+              src={testPdf}
+              style={{ width: "100%", height: "100%", border: "none" }}
+            />
+          </div>
         </div>
         <div className="hoDfC">
           <div className="hoDfCa">
@@ -53,51 +59,7 @@ export default function HomeOverview({ filter, setState }: any) {
             <div className="hoDfCaB">
               <div className="hoDfCaBa" style={{ maxHeight: 100 }}>
                 To provided post running sample along with ottechments. See how
-                to handle excel SON - either ignore to handle excel SON - either
-                ignore to handle excel SON - either ignore to handle excel SON -
-                either ignore to handle excel SON - either ignore to handle
-                excel SON - either ignore to handle excel SON - either ignore to
-                handle excel SON - either ignore to handle excel SON - either
-                ignore to handle excel SON - either ignore to handle excel SON -
-                either ignore to handle excel SON - either ignore to handle
-                excel SON - either ignore to handle excel SON - either ignore to
-                handle excel SON - either ignore to handle excel SON - either
-                ignore to handle excel SON - either ignore to handle excel SON -
-                either ignore to handle excel SON - either ignore to handle
-                excel SON - either ignore to handle excel SON - either ignore to
-                handle excel SON - either ignore to handle excel SON - either
-                ignore to handle excel SON - either ignore to handle excel SON -
-                either ignore to handle excel SON - either ignore to handle
-                excel SON - either ignore to handle excel SON - either ignore to
-                handle excel SON - either ignore to handle excel SON - either
-                ignore to handle excel SON - either ignore to handle excel SON -
-                either ignore to handle excel SON - either ignore to handle
-                excel SON - either ignore to handle excel SON - either ignore to
-                handle excel SON - either ignore to handle excel SON - either
-                ignore to handle excel SON - either ignore to handle excel SON -
-                either ignore to handle excel SON - either ignore to handle
-                excel SON - either ignore to handle excel SON - either ignore to
-                handle excel SON - either ignore to handle excel SON - either
-                ignore to handle excel SON - either ignore to handle excel SON -
-                either ignore to handle excel SON - either ignore to handle
-                excel SON - either ignore to handle excel SON - either ignore to
-                handle excel SON - either ignore to handle excel SON - either
-                ignore to handle excel SON - either ignore to handle excel SON -
-                either ignore to handle excel SON - either ignore to handle
-                excel SON - either ignore to handle excel SON - either ignore to
-                handle excel SON - either ignore to handle excel SON - either
-                ignore to handle excel SON - either ignore to handle excel SON -
-                either ignore to handle excel SON - either ignore to handle
-                excel SON - either ignore to handle excel SON - either ignore to
-                handle excel SON - either ignore to handle excel SON - either
-                ignore to handle excel SON - either ignore to handle excel SON -
-                either ignore to handle excel SON - either ignore to handle
-                excel SON - either ignore to handle excel SON - either ignore to
-                handle excel SON - either ignore to handle excel SON - either
-                ignore to handle excel SON - either ignore to handle excel SON -
-                either ignore to handle excel SON - either ignore to handle
-                excel SON - either ignore to handle excel SON - either ignore to
-                handle excel SON - either ignore
+                to handle excel SON - either ignore
               </div>
               <div className="hoDfCaBe">
                 Page no&nbsp;<span>&nbsp;1,</span>
@@ -149,9 +111,13 @@ export default function HomeOverview({ filter, setState }: any) {
             <div className="hoDfCaB">
               <div className="hoDfCaBf">
                 <div className="hoDfCaBfA">
-                  <div className="hoDfCaBfAa">Industry Name</div>
                   <div style={{ background: "red" }} className="hoDfCaBfAb">
-                    Pstrubur antdd Fatrachemicad irdustrp
+                    New
+                  </div>
+                </div>
+                <div className="hoDfCaBfA">
+                  <div style={{ background: "gray" }} className="hoDfCaBfAb">
+                    Renewal
                   </div>
                 </div>
               </div>

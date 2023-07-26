@@ -1,4 +1,5 @@
 import React from "react";
+const testPdf = require("../assets/sample.pdf");
 
 export default function HomeOpenQueries({ filter }: any) {
   return (
@@ -13,7 +14,12 @@ export default function HomeOpenQueries({ filter }: any) {
             <div className="hoDfBaA">Philander Energy Loss Run.pell</div>
           </div>
           <div className="hoDe" /> {/* Line */}
-          <div className="hoDfBb"></div>
+          <div className="hoDfBb">
+          <iframe
+              src={testPdf}
+              style={{ width: "100%", height: "100%", border: "none" }}
+            />
+          </div>
         </div>
         <div className="hoDfC">
           <div className="hoDfCd">

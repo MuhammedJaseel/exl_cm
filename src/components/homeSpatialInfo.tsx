@@ -1,4 +1,5 @@
 import React from "react";
+const testPdf = require("../assets/sample.pdf");
 
 export default function HomeSpatialInfo({ filter, setState }: any) {
   return (
@@ -31,11 +32,17 @@ export default function HomeSpatialInfo({ filter, setState }: any) {
             <div className="hoDfBaA">Philander Energy Loss Run.pell</div>
           </div>
           <div className="hoDe" /> {/* Line */}
-          <div className="hoDfBb"></div>
+          <div className="hoDfBb">
+            {" "}
+            <iframe
+              src={testPdf}
+              style={{ width: "100%", height: "100%", border: "none" }}
+            />
+          </div>
         </div>
         <div className="hoDfC">
           <div className="hoDfCa">
-            <div className="hoDfCaA">Document Summary</div>
+            <div className="hoDfCaA">Some Details about insured post code</div>
             <div className="hoDfCaB">
               <div className="hoDfCaBa">
                 <i style={{ color: "red" }}>
@@ -51,7 +58,9 @@ export default function HomeSpatialInfo({ filter, setState }: any) {
             </div>
           </div>
           <div className="hoDfCa">
-            <div className="hoDfCaA">Decline Indicator</div>
+            <div className="hoDfCaA">
+              Can you tell something about this Company
+            </div>
             <div className="hoDfCaB">
               <div className="hoDfCaBa">
                 <i style={{ color: "red" }}>
@@ -67,7 +76,9 @@ export default function HomeSpatialInfo({ filter, setState }: any) {
             </div>
           </div>
           <div className="hoDfCa">
-            <div className="hoDfCaA">New or renewal</div>
+            <div className="hoDfCaA">
+              What is the building name near to Insured post code
+            </div>
             <div className="hoDfCaB">
               <div className="hoDfCaBa">
                 <i style={{ color: "red" }}>

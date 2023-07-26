@@ -18,10 +18,7 @@ export default class HomeScreen extends Component {
     };
   }
 
-  componentDidMount(): void {
-    const { filter }: any = this.state;
-    console.log(filter);
-  }
+  componentDidMount(): void {}
 
   render() {
     const { page, showUploadPop, filter }: any = this.state;
@@ -49,23 +46,23 @@ export default class HomeScreen extends Component {
               </div>
               <div
                 onClick={() => setState({ page: 1 })}
-                className={
-                  "hoBcBcA" + (page === 1 ? "_ _" : " ") + "hoICcheckbox"
-                }
-              >
-                Submission Comparison
-              </div>
-              <div
-                onClick={() => setState({ page: 2 })}
-                className={"hoBcBcA" + (page === 2 ? "_ _" : " ") + "hoICearth"}
+                className={"hoBcBcA" + (page === 1 ? "_ _" : " ") + "hoICearth"}
               >
                 Geo Spatial information
               </div>
               <div
-                onClick={() => setState({ page: 3 })}
-                className={"hoBcBcA" + (page === 3 ? "_ _" : " ") + "hoICbook"}
+                onClick={() => setState({ page: 2 })}
+                className={"hoBcBcA" + (page === 2 ? "_ _" : " ") + "hoICbook"}
               >
                 Open Queries
+              </div>
+              <div
+                onClick={() => setState({ page: 3 })}
+                className={
+                  "hoBcBcA" + (page === 3 ? "_ _" : " ") + "hoICcheckbox"
+                }
+              >
+                Submission Audit
               </div>
             </div>
             <div
@@ -80,13 +77,13 @@ export default class HomeScreen extends Component {
           <HomeOverview filter={filter} setState={setState} />
         ) : null}
         {page === 1 ? (
-          <HomeComparison filter={filter} setState={setState} />
-        ) : null}
-        {page === 2 ? (
           <HomeSpatialInfo filter={filter} setState={setState} />
         ) : null}
-        {page === 3 ? (
+        {page === 2 ? (
           <HomeOpenQueries filter={filter} setState={setState} />
+        ) : null}
+        {page === 3 ? (
+          <HomeComparison filter={filter} setState={setState} />
         ) : null}
         {showUploadPop ? (
           <HomeUploadPopup setState={setState} state={this.state} />

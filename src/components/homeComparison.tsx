@@ -1,3 +1,5 @@
+const testPdf = require("../assets/sample.pdf");
+
 export default function HomeComparison({ filter, setState }: any) {
   return (
     <div className="hoD">
@@ -28,10 +30,15 @@ export default function HomeComparison({ filter, setState }: any) {
             <div className="hoDfBaA">Philander Energy Loss Run.pell</div>
           </div>
           <div className="hoDe" /> {/* Line */}
-          <div className="hoDfBb"></div>
+          <div className="hoDfBb">
+            <iframe
+              src={testPdf}
+              style={{ width: "100%", height: "100%", border: "none" }}
+            />
+          </div>
         </div>
         <div className="hoDfC">
-          <div className="hoDfCb">Submission and System Data Comparison</div>
+          <div className="hoDfCb">Submission vs System data Comparison</div>
           <div className="hoDfCc">
             <div className="hoDfCcA">
               <div className="hoDfCcAa">Field</div>
