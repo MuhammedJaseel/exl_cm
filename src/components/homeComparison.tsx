@@ -1,5 +1,3 @@
-import React from "react";
-
 export default function HomeComparison({ filter, setState }: any) {
   return (
     <div className="hoD">
@@ -56,7 +54,7 @@ export default function HomeComparison({ filter, setState }: any) {
             </div>
 
             <div className="hoDfCaB">
-              <div className="hoDfCaBa">
+              <div className="hoDfCaBa" style={{ maxHeight: 320 }}>
                 Insured name in Email body Is "Philander Energy Sclutions"
                 whereas in attochment is *Philander group Lic* insured oddress
                 Postcode mentioned in Emoil boor is -POI8 762* whoroas in

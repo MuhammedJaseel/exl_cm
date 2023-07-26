@@ -51,9 +51,53 @@ export default function HomeOverview({ filter, setState }: any) {
           <div className="hoDfCa">
             <div className="hoDfCaA">Document Summary</div>
             <div className="hoDfCaB">
-              <div className="hoDfCaBa">
-                TO provided post running sample along with ottechments. See how
-                to handle excel SON- either ignore
+              <div className="hoDfCaBa" style={{ maxHeight: 100 }}>
+                To provided post running sample along with ottechments. See how
+                to handle excel SON - either ignore to handle excel SON - either
+                ignore to handle excel SON - either ignore to handle excel SON -
+                either ignore to handle excel SON - either ignore to handle
+                excel SON - either ignore to handle excel SON - either ignore to
+                handle excel SON - either ignore to handle excel SON - either
+                ignore to handle excel SON - either ignore to handle excel SON -
+                either ignore to handle excel SON - either ignore to handle
+                excel SON - either ignore to handle excel SON - either ignore to
+                handle excel SON - either ignore to handle excel SON - either
+                ignore to handle excel SON - either ignore to handle excel SON -
+                either ignore to handle excel SON - either ignore to handle
+                excel SON - either ignore to handle excel SON - either ignore to
+                handle excel SON - either ignore to handle excel SON - either
+                ignore to handle excel SON - either ignore to handle excel SON -
+                either ignore to handle excel SON - either ignore to handle
+                excel SON - either ignore to handle excel SON - either ignore to
+                handle excel SON - either ignore to handle excel SON - either
+                ignore to handle excel SON - either ignore to handle excel SON -
+                either ignore to handle excel SON - either ignore to handle
+                excel SON - either ignore to handle excel SON - either ignore to
+                handle excel SON - either ignore to handle excel SON - either
+                ignore to handle excel SON - either ignore to handle excel SON -
+                either ignore to handle excel SON - either ignore to handle
+                excel SON - either ignore to handle excel SON - either ignore to
+                handle excel SON - either ignore to handle excel SON - either
+                ignore to handle excel SON - either ignore to handle excel SON -
+                either ignore to handle excel SON - either ignore to handle
+                excel SON - either ignore to handle excel SON - either ignore to
+                handle excel SON - either ignore to handle excel SON - either
+                ignore to handle excel SON - either ignore to handle excel SON -
+                either ignore to handle excel SON - either ignore to handle
+                excel SON - either ignore to handle excel SON - either ignore to
+                handle excel SON - either ignore to handle excel SON - either
+                ignore to handle excel SON - either ignore to handle excel SON -
+                either ignore to handle excel SON - either ignore to handle
+                excel SON - either ignore to handle excel SON - either ignore to
+                handle excel SON - either ignore to handle excel SON - either
+                ignore to handle excel SON - either ignore to handle excel SON -
+                either ignore to handle excel SON - either ignore to handle
+                excel SON - either ignore to handle excel SON - either ignore to
+                handle excel SON - either ignore to handle excel SON - either
+                ignore to handle excel SON - either ignore to handle excel SON -
+                either ignore to handle excel SON - either ignore to handle
+                excel SON - either ignore to handle excel SON - either ignore to
+                handle excel SON - either ignore
               </div>
               <div className="hoDfCaBe">
                 Page no&nbsp;<span>&nbsp;1,</span>

@@ -263,6 +263,7 @@
 }
 .hoDfCaBa {
   height: 100%;
+  overflow: auto;
 }
 .hoDfCaBe {
   display: flex;
