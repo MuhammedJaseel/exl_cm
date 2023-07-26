@@ -5,6 +5,7 @@ import HomeComparison from "../components/homeComparison";
 import HomeSpatialInfo from "../components/homeSpatialInfo";
 import HomeOpenQueries from "../components/homeOpenQueries";
 import HomeUploadPopup from "../components/homeUploadPopup";
+import { DashboardFilter } from "../modules/home";
 
 export default class HomeScreen extends Component {
   constructor(props: any) {
@@ -13,10 +14,17 @@ export default class HomeScreen extends Component {
       page: 0,
       showUploadPop: false,
       loading: false,
+      filter: new DashboardFilter(),
     };
   }
+
+  componentDidMount(): void {
+    const { filter }: any = this.state;
+    console.log(filter);
+  }
+
   render() {
-    const { page, showUploadPop }: any = this.state;
+    const { page, showUploadPop, filter }: any = this.state;
     const setState = (v: any) => this.setState(v);
     return (
       <div className="hoB">
@@ -68,10 +76,18 @@ export default class HomeScreen extends Component {
             </div>
           </div>
         </div>
-        {page === 0 ? <HomeOverview /> : null}
-        {page === 1 ? <HomeComparison /> : null}
-        {page === 2 ? <HomeSpatialInfo /> : null}
-        {page === 3 ? <HomeOpenQueries /> : null}
+        {page === 0 ? (
+          <HomeOverview filter={filter} setState={setState} />
+        ) : null}
+        {page === 1 ? (
+          <HomeComparison filter={filter} setState={setState} />
+        ) : null}
+        {page === 2 ? (
+          <HomeSpatialInfo filter={filter} setState={setState} />
+        ) : null}
+        {page === 3 ? (
+          <HomeOpenQueries filter={filter} setState={setState} />
+        ) : null}
         {showUploadPop ? (
           <HomeUploadPopup setState={setState} state={this.state} />
         ) : null}

@@ -137,7 +137,7 @@
 /* ////////////////////////////////////////////////////////////////////////////// */
 .hoD {
   height: calc(100vh - 160px);
-  padding: 40px 60px;
+  padding: 30px 60px;
   box-sizing: border-box;
   overflow: auto;
 }
@@ -228,18 +228,24 @@
 .hoDfBb {
   margin-top: 10px;
   background-color: #80808033;
-  min-height: 400px;
+  height: 400px;
 }
 /* /////////////////////////////////////////////////////// */
 .hoDfC {
   width: 50%;
   margin-left: 10px;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
 }
 .hoDfCa {
+  height: 100%;
   border: 1.5px solid #787878;
   border-top-left-radius: 4px;
   border-top-right-radius: 4px;
   margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
 }
 .hoDfCaA {
   background-color: #787878;
@@ -249,8 +255,14 @@
   font-weight: 500;
 }
 .hoDfCaB {
+  height: 100%;
   padding: 6px 8px;
   font-size: 15px;
+  display: flex;
+  flex-direction: column;
+}
+.hoDfCaBa {
+  height: 100%;
 }
 .hoDfCaBe {
   display: flex;

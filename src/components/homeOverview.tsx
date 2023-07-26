@@ -1,20 +1,36 @@
 import React from "react";
 
-export default function HomeOverview() {
+export default function HomeOverview({ filter, setState }: any) {
   return (
     <div className="hoD">
       <div className="hoDb">Filter by :</div>
       <div className="hoDc">
         <div className="hoDcB">
           <div className="hoDcBa">Length: </div>
-          <div className="hoDcBb_">Short</div>
-          <div className="hoDcBb">Medium</div>
-          <div className="hoDcBb">Long</div>
+          {filter.overView.length.map((it: any, k: any) => (
+            <div
+              className={it.selected ? "hoDcBb_" : "hoDcBb"}
+              onClick={() => {
+                it.selected = !it.selected;
+                setState({ filter });
+              }}
+            >
+              {it.name}
+            </div>
+          ))}
           <div className="hoDcBc" />
           <div className="hoDcBa">Include: </div>
-          <div className="hoDcBb">Incured</div>
-          <div className="hoDcBb">Industry</div>
-          <div className="hoDcBb">Limits</div>
+          {filter.overView.include.map((it: any, k: any) => (
+            <div
+              className={it.selected ? "hoDcBb_" : "hoDcBb"}
+              onClick={() => {
+                it.selected = !it.selected;
+                setState({ filter });
+              }}
+            >
+              {it.name}
+            </div>
+          ))}
         </div>
         <div className="hoDcC">Generate Summary</div>
       </div>
@@ -35,8 +51,10 @@ export default function HomeOverview() {
           <div className="hoDfCa">
             <div className="hoDfCaA">Document Summary</div>
             <div className="hoDfCaB">
-              TO provided post running sample along with ottechments. See how to
-              handle excel SON- either ignore
+              <div className="hoDfCaBa">
+                TO provided post running sample along with ottechments. See how
+                to handle excel SON- either ignore
+              </div>
               <div className="hoDfCaBe">
                 Page no&nbsp;<span>&nbsp;1,</span>
                 <span>&nbsp;2,</span>

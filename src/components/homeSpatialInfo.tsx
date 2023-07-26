@@ -1,16 +1,23 @@
 import React from "react";
 
-export default function HomeSpatialInfo() {
+export default function HomeSpatialInfo({ filter, setState }: any) {
   return (
     <div className="hoD">
       <div className="hoDb">Filter by :</div>
       <div className="hoDc">
         <div className="hoDcB">
           <div className="hoDcBa">Include: </div>
-          <div className="hoDcBb">Name</div>
-          <div className="hoDcBb_">Country</div>
-          <div className="hoDcBb_">City</div>
-          <div className="hoDcBb">Post Code</div>
+          {filter.spatialInfo.include.map((it: any, k: any) => (
+            <div
+              className={it.selected ? "hoDcBb_" : "hoDcBb"}
+              onClick={() => {
+                it.selected = !it.selected;
+                setState({ filter });
+              }}
+            >
+              {it.name}
+            </div>
+          ))}
         </div>
       </div>
       <div className="hoDe" /> {/* Line */}
@@ -30,9 +37,11 @@ export default function HomeSpatialInfo() {
           <div className="hoDfCa">
             <div className="hoDfCaA">Document Summary</div>
             <div className="hoDfCaB">
-              <i style={{ color: "red" }}>
-                TB provided using Geo Sparial Models
-              </i>
+              <div className="hoDfCaBa">
+                <i style={{ color: "red" }}>
+                  TB provided using Geo Sparial Models
+                </i>
+              </div>
               <div className="hoDfCaBe">
                 Page no&nbsp;<span>&nbsp;1,</span>
                 <span>&nbsp;2,</span>
@@ -44,9 +53,11 @@ export default function HomeSpatialInfo() {
           <div className="hoDfCa">
             <div className="hoDfCaA">Decline Indicator</div>
             <div className="hoDfCaB">
-              <i style={{ color: "red" }}>
-                TB provided using Geo Sparial Models
-              </i>
+              <div className="hoDfCaBa">
+                <i style={{ color: "red" }}>
+                  TB provided using Geo Sparial Models
+                </i>
+              </div>
               <div className="hoDfCaBe">
                 Page no&nbsp;<span>&nbsp;1,</span>
                 <span>&nbsp;2,</span>
@@ -58,9 +69,11 @@ export default function HomeSpatialInfo() {
           <div className="hoDfCa">
             <div className="hoDfCaA">New or renewal</div>
             <div className="hoDfCaB">
-              <i style={{ color: "red" }}>
-                TB provided using Geo Sparial Models
-              </i>
+              <div className="hoDfCaBa">
+                <i style={{ color: "red" }}>
+                  TB provided using Geo Sparial Models
+                </i>
+              </div>
               <div className="hoDfCaBe">
                 Page no&nbsp;<span>&nbsp;1,</span>
                 <span>&nbsp;2,</span>

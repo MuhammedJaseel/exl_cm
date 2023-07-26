@@ -1,6 +1,6 @@
 import React from "react";
 
-export default function HomeOpenQueries() {
+export default function HomeOpenQueries({ filter }: any) {
   return (
     <div className="hoD">
       <div className="hoDf">

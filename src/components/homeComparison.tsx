@@ -1,17 +1,22 @@
 import React from "react";
 
-export default function HomeComparison() {
+export default function HomeComparison({ filter, setState }: any) {
   return (
     <div className="hoD">
       <div className="hoDb">Filter by :</div>
       <div className="hoDc">
         <div className="hoDcB">
-          <div className="hoDcBb_">Insured Name</div>
-          <div className="hoDcBb">Insured City</div>
-          <div className="hoDcBb">Insured Past code</div>
-          <div className="hoDcBb">UW Name</div>
-          <div className="hoDcBb">Droker Name</div>
-          <div className="hoDcBb">Industry</div>
+          {filter.comparison.map((it: any, k: any) => (
+            <div
+              className={it.selected ? "hoDcBb_" : "hoDcBb"}
+              onClick={() => {
+                it.selected = !it.selected;
+                setState({ filter });
+              }}
+            >
+              {it.name}
+            </div>
+          ))}
         </div>
       </div>
       <div className="hoDe" /> {/* Line */}
@@ -51,10 +56,12 @@ export default function HomeComparison() {
             </div>
 
             <div className="hoDfCaB">
-              Insured name in Email body Is "Philander Energy Sclutions" whereas
-              in attochment is *Philander group Lic* insured oddress Postcode
-              mentioned in Emoil boor is -POI8 762* whoroas in attachment is
-              "POIS 702".
+              <div className="hoDfCaBa">
+                Insured name in Email body Is "Philander Energy Sclutions"
+                whereas in attochment is *Philander group Lic* insured oddress
+                Postcode mentioned in Emoil boor is -POI8 762* whoroas in
+                attachment is "POIS 702".
+              </div>
               <div className="hoDfCaBe">
                 Page no&nbsp;<span>&nbsp;1,</span>
                 <span>&nbsp;2,</span>
